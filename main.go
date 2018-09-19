@@ -32,6 +32,7 @@ func main() {
 		sport := c.Param("sport")
 		league := c.Param("league")
 		log.Printf("Sport=%s, League=%s", sport, league)
+
 		c.JSON(200, gin.H{
 			"sport":  sport,
 			"league": league,
